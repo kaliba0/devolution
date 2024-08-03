@@ -1,3 +1,6 @@
+require('./commands/tickets.js');
+require('./commands/clear.js');
+
 const { Client, GatewayIntentBits, ChannelType, PermissionsBitField } = require('discord.js');
 const express = require('express');
 const app = express();
