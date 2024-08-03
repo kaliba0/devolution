@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <title>Devolution</title>
+    <script>
+        function orderProduct(productId) {
+            window.location.href = 'product.html?id=' + productId;
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">&#9001; Dev•olution &#9002;</a>
+
+        <div class="navlinks">
+            <a href="index.html">Home</a>
+            <a href="#">Contact me</a>
+            <a href="help.html">Help</a>
+            <a href="#" class="profile"><ion-icon name="person"></ion-icon></a>
+        </div>
+    </header>
+
+    <main>
+        <div class="section1">
+            <h2>What I propose</h2>
+            <p>I am already proficient in some of the programming languages or libraries mentioned below. However, you can always contact me for other projects, and I will gladly assist you.</p>
+            <ul>
+                <li>HTML | CSS</li>
+                <li>Python</li>
+                <li>JavaScript
+                    <ul>
+                        <li>node.js</li>
+                        <li>react.js</li>
+                        <li>discord.js</li>
+                    </ul>
+                </li>
+                <li>Swift</li>
+                <li>Hardware (Arduino)</li>
+            </ul>
+        </div>
+
+        <div class="section2">
+            <div class="sec2title">
+                <h2>My Products</h2>
+                <p>Here are what I sell</p>
+            </div>
+
+            <div class="product-container">
+                <div class="discord-box">
+                    <img src="assets/discord-logo.png" alt="discord logo" class="discord-logo">
+                    <div class="product-details">
+                        <h3>Custom Discord Bot</h3>
+                        <p>I can create a discord bot and integrate everything you want your bot to do.</p>
+                    </div>
+                    <a href="javascript:void(0)" class="order" onclick="orderProduct('discord')">ORDER THIS PRODUCT</a>
+                </div>
+    
+                <div class="swift-box">
+                    <img src="assets/swift-logo.svg" alt="swift logo" class="swift-logo">
+                    <div class="product-details">
+                        <h3>Mobile IOS App</h3>
+                        <p>You have an idea of a mobile app and don't know how to do it ? <br>I can build this app for you!</p>
+                    </div>
+                    <a href="javascript:void(0)" class="order" onclick="orderProduct('swift')">ORDER THIS PRODUCT</a>
+                </div>
+
+                <div class="android-box">
+                    <img src="assets/android-logo.png" alt="android logo" class="android-logo">
+                    <div class="product-details">
+                        <h3>Mobile Android App</h3>
+                        <p>You have an idea of a mobile app and don't know how to do it ? <br>I can build this app for you!</p>
+                    </div>
+                    <a href="javascript:void(0)" class="order" onclick="orderProduct('android')">ORDER THIS PRODUCT</a>
+                </div>
+
+                <div class="react-box">
+                    <img src="assets/react-logo.png" alt="react logo" class="react-logo">
+                    <div class="product-details">
+                        <h3>React.js App</h3>
+                        <p>You have an idea of a mobile app and don't know how to do it ? <br>I can build this app for you!</p>
+                    </div>
+                    <a href="javascript:void(0)" class="order" onclick="orderProduct('react')">ORDER THIS PRODUCT</a>
+                </div>
+            </div>
+
+            <div class="product-container">
+                <div class="python-box">
+                    <img src="assets/python-logo.png" alt="python logo" class="python-logo">
+                    <div class="product-details">
+                        <h3>Python App or Project</h3>
+                        <p>You have an idea of a mobile app and don't know how to do it ? <br>I can build this app for you!</p>
+                    </div>
+                    <a href="javascript:void(0)" class="order" onclick="orderProduct('python')">ORDER THIS PRODUCT</a>
+                </div>
+
+                <div class="arduino-box">
+                    <img src="assets/arduino-logo.svg" alt="arduino logo" class="arduino-logo">
+                    <div class="product-details">
+                        <h3>Arduino Project</h3>
+                        <p>You need Arduino to program a robot or anything else ? I can make it for you !</p>
+                    </div>
+                    <a href="javascript:void(0)" class="order" onclick="orderProduct('arduino')">ORDER THIS PRODUCT</a>
+                </div>
+
+                <div class="portfolio-box">
+                    <img src="assets/portfolio-logo.png" alt="portfolio logo" class="portfolio-logo">
+                    <div class="product-details">
+                        <h3>Portfolio Website</h3>
+                        <p>You want a website to present your skills and experiences ? This product is made for you !</p>
+                    </div>
+                    <a href="javascript:void(0)" class="order" onclick="orderProduct('portfolio')">ORDER THIS PRODUCT</a>
+                </div>
+
+                <div class="html-box">
+                    <img src="assets/html-logo.png" alt="html logo" class="html-logo">
+                    <div class="product-details">
+                        <h3>Website</h3>
+                        <p>You want a website to present your skills and experiences ? This product is made for you !</p>
+                    </div>
+                    <a href="javascript:void(0)" class="order" onclick="orderProduct('html')">ORDER THIS PRODUCT</a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
