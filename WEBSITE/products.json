@@ -1,0 +1,50 @@
+[
+    {
+        "id": "discord",
+        "name": "Custom Discord Bot",
+        "description": "Are you looking to elevate your Discord server to the next level? Look no further! Our custom Discord bots are designed to enhance your community experience. Whether you need moderation tools, fun interactive games, or seamless integrations with your favorite services, our bots can do it all. Don't miss out on the opportunity to transform your Discord server. Contact us today and let's build something amazing together!",
+        "image": "assets/discord-logo.png"
+    },
+    {
+        "id": "swift",
+        "name": "Mobile IOS App",
+        "description": "Transform your business with our tailor-made iOS mobile applications. Whether you need a sleek e-commerce platform, a dynamic social media interface, or a robust enterprise solution, our expert developers craft apps that are user-friendly, secure, and perfectly aligned with your brand. Elevate customer engagement, streamline operations, and stay ahead of the competition with innovative, high-performance apps designed just for you. Get in touch today to start your journey towards digital excellence!",
+        "image": "assets/swift-logo.svg"
+    },
+    {
+        "id": "android",
+        "name": "Mobile Android App",
+        "description": "Unlock the potential of your business with custom Android mobile apps! Our expert team specializes in creating tailor-made applications that fit your unique needs and elevate your brand. Whether you need a sleek e-commerce platform, a dynamic social media tool, or an innovative business solution, we bring your vision to life with cutting-edge technology and intuitive design. Enhance user engagement, streamline operations, and stay ahead of the competition. Contact us today to transform your ideas into a powerful, personalized mobile experience. Your business deserves the best – let’s build it together!",
+        "image": "assets/android-logo.png"
+    },
+    {
+        "id": "react",
+        "name": "React.js App",
+        "description": "Enhance your web presence with custom react.js apps! Our skilled developers specialize in crafting personalized applications using the powerful react.js framework. Whether you need dynamic interfaces, seamless animations, or interactive web solutions, we tailor every project to meet your specific needs. Our custom rehauts.js apps offer unparalleled performance, scalability, and user engagement, ensuring your business stands out in the digital landscape. Let us bring your innovative ideas to life with top-notch technology and creative design. Elevate your online experience – contact us today to create a bespoke react.js app that sets you apart!",
+        "image": "assets/react-logo.png"
+    },
+    {
+        "id": "python",
+        "name": "Python App or Project",
+        "description": "Are you looking for a skilled Python developer to bring your projects to life? Look no further! With extensive experience in Python programming, I specialize in crafting efficient, scalable, and high-quality code tailored to your needs. Whether it's web development, data analysis, automation, or machine learning, I am equipped to handle any challenge with precision and creativity.",
+        "image": "assets/python-logo.png"
+    },
+    {
+        "id": "arduino",
+        "name": "Arduino Project",
+        "description": "Bring your hardware projects to life with a skilled Arduino developer! With extensive experience in coding and hands-on project execution, I offer comprehensive solutions to make your ideas a reality. Whether you're developing innovative IoT devices, creating custom automation systems, or prototyping cutting-edge technology, my expertise ensures your projects are completed efficiently and to the highest standards.",
+        "image": "assets/arduino-logo.svg"
+    },
+    {
+        "id": "portfolio",
+        "name": "Portfolio Website",
+        "description": "Showcase your work with a stunning portfolio website that captures your unique style and expertise. As a skilled web developer, I specialize in creating personalized, high-quality portfolio sites that highlight your achievements and attract potential clients and employers. Let’s collaborate to bring your vision to life and make your portfolio stand out in the digital world. Hire me to code your portfolio website and take the first step towards showcasing your work in the best light possible!",
+        "image": "assets/portfolio-logo.png"
+    },
+    {
+        "id": "html",
+        "name": "Website",
+        "description": "Are you looking for a skilled web developer to bring your vision to life? Look no further! With years of experience in coding and designing websites, I am ready to transform your ideas into stunning, functional, and user-friendly websites. Whether you need a sleek portfolio, an interactive e-commerce platform, or a dynamic corporate site, I have the expertise to deliver high-quality results. I specialize in responsive design, ensuring your site looks great on any device, and I prioritize seamless user experience. Let’s collaborate to create a website that not only meets your needs but exceeds your expectations. Hire me, and let’s make your web presence extraordinary!",
+        "image": "assets/html-logo.png"
+    }
+]

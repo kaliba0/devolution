@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="style2.css">
+    <title>Product Details</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const productId = urlParams.get('id');
+
+            fetch('products.json')
+                .then(response => response.json())
+                .then(products => {
+                    const product = products.find(p => p.id === productId);
+                    if (product) {
+                        document.getElementById('product-name').textContent = product.name;
+                        document.getElementById('product-description').textContent = product.description;
+                        document.getElementById('product-image').src = product.image;
+
+                        document.getElementById('warning-button').addEventListener('click', () => {
+                            document.querySelector('.warning').style.display = 'flex';
+                        });
+
+                        document.getElementById('buy-button').addEventListener('click', () => {
+                            const discordId = document.getElementById('discord-id').value;
+                            fetch('http://localhost:3045/create-channel', {
+                                method: 'POST',
+                                headers: {
+                                    'Content-Type': 'application/json'
+                                },
+                                body: JSON.stringify({ productName: product.name, discordId: discordId })
+                            })
+                            .catch(error => console.error('Error:', error));
+                        });
+
+                        const discordInput = document.getElementById('discord-id');
+                        const continueButton = document.getElementById('buy-button');
+
+                        discordInput.addEventListener('input', () => {
+                            const discordId = discordInput.value;
+                            if (/^\d{10,}$/.test(discordId)) {
+                                continueButton.style.pointerEvents = 'auto';
+                                continueButton.style.backgroundColor = '';
+                            } else {
+                                continueButton.style.pointerEvents = 'none';
+                                continueButton.style.backgroundColor = 'gray';
+                            }
+                        });
+                    } else {
+                        document.getElementById('product-name').textContent = "Product not found";
+                        document.getElementById('product-description').textContent = "";
+                    }
+                })
+                .catch(error => console.error('Fetch error:', error));
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">&#9001; Dev•olution &#9002;</a>
+        <div class="navlinks">
+            <a href="index.html">Home</a>
+            <a href="#">Contact me</a>
+            <a href="help.html">Help</a>
+            <a href="#" class="profile"><ion-icon name="person"></ion-icon></a>
+        </div>
+    </header>
+    <main>
+        <div class="product">
+            <a href="index.html" class="retour"><ion-icon name="arrow-back"></ion-icon></a>
+            <img id="product-image" alt="Product Image">
+            <div class="details">
+                <h1 id="product-name"></h1>
+                <p id="product-description"></p>
+                <a id="warning-button" class="buybtn">BUY THIS SERVICE</a>
+            </div>
+        </div>
+    </main>
+
+    <div class="warning" style="display: none;">
+        <h1>Thank you for having ordered this product!</h1>
+        <h3>You will be redirected to discord.com</h3>
+        <p>In order to keep your purchase on, I need more information about your projects. <br>To be able to discuss with you, you will be redirected to Discord. A new channel will be specially created for your order</p>
+        <p>If you don't know what is your Discord ID, click on the <ion-icon name="help-circle"></ion-icon> icon.</p>
+        <div class="inputdiv">
+            <input type="text" id="discord-id" placeholder="Enter your Discord ID" required>
+            <a href="help.html" target="_blank"><ion-icon name="help-circle"></ion-icon></a>
+        </div>
+        <div class="warningbtn">
+            <a href="index.html">CANCEL PURCHASE</a>
+            <a href="https://discord.com" id="buy-button" target="_blank" style="pointer-events: none; background-color: gray;">CONTINUE TO DISCORD</a>
+        </div>
+    </div>
+</body>
+</html>

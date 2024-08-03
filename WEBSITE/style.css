@@ -1,0 +1,429 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    color: black;
+    text-decoration: none;
+    font-family: 'Poppins', 'Roboto Mono', sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    padding: 20px 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+
+header .logo {
+    font-weight: 600;
+    font-size: x-large;
+    color: #333333;
+}
+
+
+header .navlinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+header .navlinks a {
+    color: #006C8D;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+header .navlinks .profile {
+    border: solid 2px #333333;
+    color: #333333;
+}
+
+header .navlinks a ion-icon {
+    color: #333333;
+    font-size: 20px;
+}
+
+header .navlinks a:hover {
+    background-color: #006C8D;
+    color: white;
+    transition: all .2s;
+} 
+
+header .navlinks .profile:hover {
+    background-color: #333333;
+    color: white;
+    transition: all .2s;
+} 
+
+header .navlinks a:hover ion-icon {
+    color: white;
+}
+
+
+main .section1 {
+    padding: 100px;
+    background-color: #006C8D;
+}
+
+main .section1 h2, main .section1 p, main .section1 ul li {
+    color: white;
+}
+
+main .section1 h2 {
+    font-size: 40px;
+    text-decoration: underline;
+}
+
+main .section1 p, ul li {
+    font-size: 20px;
+}
+
+main .product-container {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+main .section2 {
+    padding: 100px;
+}
+
+main .section2 .sec2title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+/* DISCORD */
+
+main .section2 .discord-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: solid 2px #5165F6;
+    max-width: 300px;
+}
+main .section2 .discord-box img {
+    height: 150px;
+    padding: 20px 0;
+}
+main .section2 .discord-box .product-details {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+main .section2 .discord-box .product-details p{
+    font-size: 14px;
+    padding: 10px;
+}
+main .section2 .discord-box .order {
+    text-align: center;
+    background-color: #5165F6;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    border-top: solid 2px #5165F6;
+}
+main .section2 .discord-box .order:hover{
+    background-color: white;
+    color: #5165F6;
+    transition: all .15s;
+}
+
+
+/* SWIFT*/
+main .section2 .swift-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: solid 2px #F89440;
+    max-width: 300px;
+}
+main .section2 .swift-box img {
+    height: 150px;
+    padding: 20px 0;
+}
+main .section2 .swift-box .product-details {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+main .section2 .swift-box .product-details p{
+    font-size: 14px;
+    padding: 10px;
+}
+main .section2 .swift-box .order {
+    text-align: center;
+    background-color: #F89440;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    border-top: solid 2px #F89440;
+}
+main .section2 .swift-box .order:hover{
+    background-color: white;
+    color: #F89440;
+    transition: all .15s;
+}
+
+
+/* ANDROID */
+
+main .section2 .android-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: solid 2px #A6C73B;
+    max-width: 300px;
+}
+main .section2 .android-box img {
+    height: 150px;
+    padding: 20px 0;
+}
+main .section2 .android-box .product-details {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+main .section2 .android-box .product-details p{
+    font-size: 14px;
+    padding: 10px;
+}
+main .section2 .android-box .order {
+    text-align: center;
+    background-color: #A6C73B;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    border-top: solid 2px #A6C73B;
+}
+main .section2 .android-box .order:hover{
+    background-color: white;
+    color: #A6C73B;
+    transition: all .15s;
+}
+
+/* REACT */
+main .section2 .react-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: solid 2px #61DAFB;
+    max-width: 300px;
+}
+main .section2 .react-box img {
+    height: 150px;
+    padding: 20px 0;
+}
+main .section2 .react-box .product-details {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+main .section2 .react-box .product-details p{
+    font-size: 14px;
+    padding: 10px;
+}
+main .section2 .react-box .order {
+    text-align: center;
+    background-color: #61DAFB;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    border-top: solid 2px #61DAFB;
+}
+main .section2 .react-box .order:hover{
+    background-color: white;
+    color: #61DAFB;
+    transition: all .15s;
+}
+
+
+/* PYTHON */
+main .section2 .python-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: solid 2px #FFD242;
+    max-width: 300px;
+}
+main .section2 .python-box img {
+    height: 150px;
+    padding: 20px 0;
+}
+main .section2 .python-box .product-details {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+main .section2 .python-box .product-details p{
+    font-size: 14px;
+    padding: 10px;
+}
+main .section2 .python-box .order {
+    text-align: center;
+    background-color: #FFD242;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    border-top: solid 2px #FFD242;
+}
+main .section2 .python-box .order:hover{
+    background-color: white;
+    color: #FFD242;
+    transition: all .15s;
+}
+
+
+/* ARDUINO */
+main .section2 .arduino-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: solid 2px #129BA1;
+    max-width: 300px;
+}
+main .section2 .arduino-box img {
+    height: 150px;
+    padding: 20px 0;
+}
+main .section2 .arduino-box .product-details {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+main .section2 .arduino-box .product-details p{
+    font-size: 14px;
+    padding: 10px;
+}
+main .section2 .arduino-box .order {
+    text-align: center;
+    background-color: #129BA1;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    border-top: solid 2px #129BA1;
+}
+main .section2 .arduino-box .order:hover{
+    background-color: white;
+    color: #129BA1;
+    transition: all .15s;
+}
+
+
+/* PORTOFOLIO */
+main .section2 .portfolio-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: solid 2px #E44D26;
+    max-width: 300px;
+}
+main .section2 .portfolio-box img {
+    height: 150px;
+    padding: 20px 0;
+}
+main .section2 .portfolio-box .product-details {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+main .section2 .portfolio-box .product-details p{
+    font-size: 14px;
+    padding: 10px;
+}
+main .section2 .portfolio-box .order {
+    text-align: center;
+    background-color: #E44D26;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    border-top: solid 2px #E44D26;
+}
+main .section2 .portfolio-box .order:hover{
+    background-color: white;
+    color: #E44D26;
+    transition: all .15s;
+}
+
+/* HTML */
+main .section2 .html-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: solid 2px #0C75B5;
+    max-width: 300px;
+}
+main .section2 .html-box img {
+    height: 150px;
+    padding: 20px 0;
+}
+main .section2 .html-box .product-details {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+main .section2 .html-box .product-details p{
+    font-size: 14px;
+    padding: 10px;
+}
+main .section2 .html-box .order {
+    text-align: center;
+    background-color: #0C75B5;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    border-top: solid 2px #0C75B5;
+}
+main .section2 .html-box .order:hover{
+    background-color: white;
+    color: #0C75B5;
+    transition: all .15s;
+}
